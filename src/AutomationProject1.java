@@ -174,7 +174,7 @@ public class FlowTest {
     public void testExcel() {
         try {
             String dateToday = new SimpleDateFormat("yyyy-M-dd").format(Calendar.getInstance().getTime());
-            FileInputStream fis = new FileInputStream("C:\\Users\\Lenovo\\Downloads\\ExcelFile.xlxs" + dateToday + ".xlsx");
+            FileInputStream fis = new FileInputStream("C:\\Users\\Lenovo\\Downloads\\ExcelFile" + dateToday + ".xlsx");
             XSSFWorkbook workbook = new XSSFWorkbook(fis);
             XSSFSheet sheet = workbook.getSheet("Produit");
             XSSFRow row = sheet.getRow(0);
